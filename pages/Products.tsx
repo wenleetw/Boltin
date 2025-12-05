@@ -121,9 +121,9 @@ const Products = () => {
                       {product.description}
                     </p>
                     
-                    <div className="mb-6 flex flex-wrap gap-2">
+                    <div className="mb-6 flex flex-wrap gap-1.5">
                       {product.specs.map((spec, i) => (
-                        <span key={i} className="text-xs font-medium text-slate-600 bg-slate-100 px-2.5 py-1 rounded border border-slate-200">
+                        <span key={i} className="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200">
                           {spec}
                         </span>
                       ))}
