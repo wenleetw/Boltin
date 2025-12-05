@@ -100,14 +100,14 @@ const Products = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
                 <div key={product.id} className="bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-2xl hover:border-brand-accent/30 transition-all duration-300 group flex flex-col">
-                  <div className="relative overflow-hidden h-52 bg-slate-100 p-6 flex items-center justify-center">
+                  <div className="relative overflow-hidden h-64">
                     <img 
                       src={product.image} 
                       alt={product.name} 
-                      className="w-full h-full object-cover rounded-lg transform group-hover:scale-110 transition-transform duration-500" 
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
                     />
-                    <div className="absolute top-4 left-4">
-                       <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-bold text-brand-dark uppercase tracking-wider shadow-sm">
+                    <div className="absolute top-2 left-2">
+                       <span className="px-2 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-bold text-brand-dark uppercase tracking-wider shadow-sm">
                            {product.category}
                        </span>
                     </div>
